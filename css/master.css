@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #40826d;
+}
+
+.piano{
+  display: flex;
+  justify-content: center;
+  margin-top: 50vh;
+  transform: translate(0, -50%);
+}
+
+.key{
+  border: 1px solid black;
+}
+
+.key.white{
+  width: 80px;
+  height: 360px;
+  background-color: #fff;
+}
+
+.white.active{
+  background-color: #cccc;
+}
+
+.key.black{
+  width: 50px;
+  height: calc(360px / 2);
+  background-color: #000;
+  margin-right: -23px;
+  margin-left: -27px;
+  z-index: 2;
+}
+
+.black.active{
+  background-color: #333;
+}
